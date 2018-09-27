@@ -1,0 +1,40 @@
+Ext.define('log.store.States', {
+    extend: 'Ext.data.ArrayStore',
+    alias: 'store.states',
+    storeId: 'states',
+
+    model: 'log.model.State',
+    data: [
+        [0, 'AL', 'Alabama', 'The Heart of Dixie'],
+        [1, 'AK', 'Alaska', 'The Land of the Midnight Sun'],
+        [2, 'AZ', 'Arizona', 'The Grand Canyon State'],
+        [3, 'AR', 'Arkansas', 'The Natural State'],
+        [4, 'CA', 'California', 'The Golden State'],
+        [5, 'CO', 'Colorado', 'The Mountain State'],
+        [6, 'CT', 'Connecticut', 'The Constitution State'],
+        [7, 'DE', 'Delaware', 'The First State'],
+        [8, 'DC', 'District of Columbia', "The Nation's Capital"],
+        [9, 'FL', 'Florida', 'The Sunshine State'],
+        [10, 'GA', 'Georgia', 'The Peach State'],
+        [11, 'HI', 'Hawaii', 'The Aloha State'],
+        [12, 'ID', 'Idaho', 'Famous Potatoes'],
+        [13, 'IL', 'Illinois', 'The Prairie State'],
+        [14, 'IN', 'Indiana', 'The Hospitality State'],
+        [15, 'IA', 'Iowa', 'The Corn State'],
+        [16, 'KS', 'Kansas', 'The Sunflower State'],
+        [17, 'KY', 'Kentucky', 'The Bluegrass State'],
+        [18, 'LA', 'Louisiana', 'The Bayou State'],
+        [19, 'ME', 'Maine', 'The Pine Tree State'],
+        [20, 'MD', 'Maryland', 'Chesapeake State'],
+        [21, 'MA', 'Massachusetts', 'The Spirit of America'],
+        [22, 'MI', 'Michigan', 'Great Lakes State'],
+        [23, 'MN', 'Minnesota', 'North Star State'],
+        [24, 'MS', 'Mississippi', 'Magnolia State'],
+        [25, 'MO', 'Missouri', 'Show Me State'],
+        [26, 'MT', 'Montana', 'Big Sky Country'],
+        [27, 'NE', 'Nebraska', 'Beef State'],
+        [28, 'NV', 'Nevada', 'Silver State'],
+        [29, 'NH', 'New Hampshire', 'Granite State']
+        
+    ]
+});
