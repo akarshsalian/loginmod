@@ -1,12 +1,13 @@
 Ext.define('log.view.details', {
     extend: 'Ext.form.Panel',
     xtype:'cardo',
+    requries:['log.view.detailscontroller'],
+    controller:'detailscontroller',
     bodyPadding:10,
     title:'UserDetails',
-     width: 300,
+    width: 300,
     bodyPadding: 10,
     scrollable:true,
-    //requries:['log.store.States'],
     viewModel: {
                 data: {
                     user: new Ext.data.Model({
@@ -64,17 +65,14 @@ Ext.define('log.view.details', {
             displayField: 'state',
             bind:'{user.stat}',
             listeners: {
-            select: function(combo, records) {
+                'select': {fn:'openDialog'}
+                        
+            /*select: function(combo, records) {
                     if (combo.getValue() == 'Arizona'){
                            // Ext.Msg.alert('Alert box', 'State is Arizona');
-                        var dialog = Ext.create({
-                        xtype: 'dialog',
-                        title: 'Dialog',
-                        html: 'This is arizona zone',
-                        });
-                        dialog.show();
-                    };
-            }              
+                           fn:openDialog;
+                        };
+            }*/              
             }
          },{
              xtype: 'textfield',
